@@ -1,0 +1,45 @@
+---
+const services = [
+  {
+    step: '01',
+    name: 'Build With Love',
+    description:
+      "Passion drives our craft. With painstaking dedication, we meticulously craft each line of code, refusing to be bound by the constraints imposed by popular page builders like Wordpress. Our secret? Total control over design, enabling us to tailor the digital experience you've always envisioned. When you choose us, you're opting for sites built from the ground up, surpassing the performance of most Wordpress alternatives and delivering an unrivaled mobile experience. It's not just websites; it's a revolution in digital excellence.",
+  },
+  {
+    step: '02',
+    name: 'SEO / Experience Optimizations',
+    description:
+      "In the ever-evolving realm of the web, Google has been prioritizing page speed as a ranking factor for over a decade, since 2010. It's a game-changer: faster pages soar to the top. Here at Lunch Creek Web Designs, we're not just about your website – we're about propelling your visibility to new heights. Picture this: your site, a seamlessly responsive masterpiece across mobile, tablet, and desktop, meticulously structured to ensnare web crawlers with its immaculate organization. But that's not all; our commitment to accessibility (a11y) isn't just an afterthought; it's woven into the very fabric of our development processes, ensuring your site is a beacon of inclusivity and excellence on the web. Your digital journey begins here.",
+  },
+  {
+    step: '03',
+    name: 'Maintiance',
+    description:
+      "Our passion knows no bounds, from that very first line of code to the electrifying moment of live production deployment. With us, you can wave goodbye to the worries of staying up-to-date with the ever-evolving landscape of security standards and hosting hassles. We've got you covered. Our mission is clear: to ensure your site not only shines but thrives with the utmost availability. Trust us to handle the tech, so you can focus on what truly matters – your digital success story in the making.",
+  },
+];
+---
+
+<section id="services" class="py-16 sm:py-20">
+  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="flex flex-col gap-12 sm:gap-16">
+      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Services</h2>
+      <div class="grid gap-8 lg:grid-cols-3">
+        {
+          services.map((service) => (
+            <div class="flex flex-col gap-12 rounded-3xl bg-primary-500/10 px-6 py-8 dark:bg-primary-400/10">
+              <p class="text-sm">{service.step}</p>
+              <div class="flex flex-col gap-4">
+                <h3 class="text-xl font-medium">{service.name}</h3>
+                <p class="text-base text-primary-950/70 dark:text-primary-200/70 sm:text-lg">
+                  {service.description}
+                </p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
