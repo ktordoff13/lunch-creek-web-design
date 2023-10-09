@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import profile from '../../assets/profile.png';
 const team = [
   {
     name: 'Jakub Tordoff',
@@ -15,10 +16,13 @@ const team = [
       <!-- <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Meet our team</h2> -->
       <ul role="list" class="grid grid-cols-1 gap-8 sm:grid-cols-1 lg:grid-cols-1">
         <div class="space-y-6">
-          <img
+          <Image
             class="mx-auto h-auto w-40 rounded-full"
-            src="src/assets/profile.png"
-            alt="Jakub Tordoff"
+            format="webp"
+            width={300}
+            height={300}
+            src={profile}
+            alt="Profile image"
           />
           <div class="text-center">
             <h3 class="text-lg font-medium">Jakub Tordoff</h3>

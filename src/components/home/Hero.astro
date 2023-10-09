@@ -1,3 +1,9 @@
+---
+import { Image } from 'astro:assets';
+
+import hero from '../../assets/web_design.webp';
+---
+
 <section class="py-6 sm:py-6">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col gap-16">
@@ -17,12 +23,14 @@
           Contact Us
         </a>
       </div>
-      <img
+
+      <Image
         class="h-auto w-full rounded-3xl"
         width="1280"
         height="640"
-        src="src/assets/web_design.webp"
-        alt="Hero picture"
+        format="webp"
+        src={hero}
+        alt="Profile image"
       />
     </div>
   </div>
