@@ -4,7 +4,6 @@ import '@fontsource/inter/latin-500.css';
 import { ViewTransitions } from 'astro:transitions';
 import Footer from '../components/layout/Footer.astro';
 import Header from '../components/layout/Header.astro';
-import ogImage from '../assets/logo_transparent_background.png';
 
 interface Props {
   description: string;
@@ -34,7 +33,7 @@ const { description, title } = Astro.props;
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Lunch Creek Web Designs · Premium Website Designs" />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="/logo_white_background.png" />
+    <meta property="og:image" content="https://lunchcreekdesigns.com/assets/og-logo.png" />
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -42,7 +41,7 @@ const { description, title } = Astro.props;
     <meta property="twitter:url" content="https://lunchcreekdesigns.com" />
     <meta name="twitter:title" content="Lunch Creek Web Designs · Premium Website Designs" />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content="/logo_white_background.png" />
+    <meta name="twitter:image" content="https://lunchcreekdesigns.com/assets/og-logo.png" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <title>{title}</title>
