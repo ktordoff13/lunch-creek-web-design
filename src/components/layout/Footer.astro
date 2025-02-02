@@ -71,8 +71,16 @@ const bottomLinks = [
   //   ],
   // },
 ];
+
+const currentYear = new Date().getFullYear();
 ---
 
+<script>
+  const yearElement = document.getElementById('currentYear');
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear().toString();
+  }
+</script>
 <footer
   class="mt-16 bg-primary-500/10 py-16 dark:bg-primary-400/10 lg:mt-20 lg:py-20"
   aria-labelledby="footer-heading"
@@ -349,7 +357,7 @@ const bottomLinks = [
           your business.
         </p>
         <p class="text-sm text-primary-950/70 dark:text-primary-200/70">
-          © 2024 Lunch Creek Web Designs LLC
+          © <span id="currentYear"></span> Lunch Creek Web Designs LLC
         </p>
       </div>
 
